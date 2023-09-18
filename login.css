@@ -1,0 +1,82 @@
+/*configuracion_del_body*/
+body{
+    background-image: url("./recursos/fondo_login.jpg");
+    background-size: cover;
+}
+div.imagen{
+    image-rendering: auto;
+    image-orientation: from-image;
+    height: 600px;
+    width: 600px;
+}
+
+/*configuaracion de la izquierda*/
+div.izquierda{
+margin-right: 1px;
+background-color: rgb(125, 242, 255);
+}
+/*configuaracion de la derecha*/
+div.derecha{
+    margin-left: 1px;
+    background-color: rgb(255, 255, 255);
+}
+/*configuracion_del_cuerpo*/
+.cuerpo{
+    margin-top: 3.5cm;
+    margin-right: 5.6cm;
+    margin-left: 5.6cm;
+    display: flex;
+    flex-direction: column;
+}
+/*configuracion_del_contendor*/
+.contenedor{ 
+    margin: auto;
+    margin-top: 1.5cm;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    width: 1200px;
+    height: 600px;
+    background-color: rgba(247, 247, 247, 0.56);
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+} 
+/*label*/
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-left: 20px; 
+}
+/*imput*/
+input[type=text],[type=password]{
+    border: 1px solid #080808;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 3px;
+}
+/*vonfiguracion de los botones*/
+button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    width: 150px;
+    border: 2px solid white;  
+}
+.botones{
+    margin-top: 1cm;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button[type=submit]:hover {
+    background-color: #45a049;
+}

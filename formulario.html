@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+  <head>
+     <link rel="stylesheet" href="diseno.css">
+     <title>Formulario de registro</title>
+     <script src="script.js"></script>
+     <meta charset="UTF-8">
+  </head>
+           <!-- <body> -->
+<body>
+ <form action="procesar.php" method="post">
+           <!-- <cuerpo> -->
+  <div class="cuerpo">
+           <!-- <CONTENEDOR> -->
+    <div class="contenedor">
+           <!-- <Datos del formulario> -->
+           <!-- <LADO IZQUIERDO> -->
+      <div class="izquierda">
+           <h1>Formulario de Registro</h1>
+           <!-- <Cedula> -->
+           <label for="cedula"><strong>Nro.Cedula</strong></label>
+           <input type="text" name="cedula" id="cedula" onchange = "validarCampoCedula()" required>
+           <span id="mensajeError" style="color: red;"></span>
+           <!-- <Nombre> -->
+           <label for="nombre"><strong>Nombre</strong></label>
+           <input type="text" name="nombre" id="nombre"required> 
+           <!-- <Fecha de nacimiento> -->
+           <label for="fechNacimiento">Fecha de Nacimiento:</label>
+           <input class="fechNacimiento"  type="date" name="fechNacimiento" id="fechNacimiento">
+           <!-- <Edad> -->
+           <label for="edad">Edad:</label>
+           <input type="number" name="edad" id="edad">
+           <!-- <Carrera> -->
+           <label for="carrera">Carrera:</label>
+           <input type="text" name="carrera" id="carrera">
+           <!-- <Parcial(seleccion)> -->
+           <label for="parcial">Parcial:</label>
+           <select id="parcial" name="parcial">
+           <option value="parcial 1">Primero</option>
+           <option value="parcial 2">Segundo</option>
+           </select>
+      </div>
+            <hr><hr>
+           <!-- <LADO DERECHO> -->
+         <div class="derecha">   
+            <!-- <Sexo> -->
+           <label for="sexo">Sexo:</label>
+           <select id="sexo" name="sexo">
+           <option value="Maculino">Maculino</option>
+           <option value="Femenino">Femenino</option>
+           <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+           </select>
+           <!-- <Nombre del Proyecto> -->
+           <label for="nombre_Proyecto">Nombre Proyecto:</label>
+           <input type="text" name="nombre_Proyecto" id="nombre_Proyecto">
+           <!-- <Fecha de Entrega> -->
+           <label for="fechEntrega">Fecha de Entrega:</label>
+           <input class="fechEntrega"  type="date" name="fechEntrega" id="fechEntrega">
+           <!-- <Curso> -->
+           <label for="curso">Curso:</label>
+           <select id="curso" name="curso">
+           <option value="7-1">7-1</option>
+           <option value="7-2">7-2</option>
+           <option value="7-3">7-3</option>
+           <option value="7-4">7-4</option>
+           <option value="7-5">7-5</option>
+           </select>
+           <!-- <Descripcion del proyecto> -->
+           <label for="DesProyect">Descripcion del Proyecto:</label>
+           <textarea id="DesProyect" name="DesProyect" rows= "5"></textarea>
+           
+           <!-- <Boton de emviar> -->
+           <div class="botones">
+             <button><a href="index.html">Atrás</a></button>
+             <button type="submit">Enviar</button>
+           </div>
+        </div>
+    </div>
+  </div>
+ </form>
+</body></html>
